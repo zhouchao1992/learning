@@ -42,22 +42,27 @@
         </dependency>
 
         <!--knife4j依赖-->
-            <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-spring-boot-starter</artifactId>
-                <!--在引用时请在maven中央仓库搜索最新版本号-->
-                <version>2.0.2</version>
-            </dependency>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <!--在引用时请在maven中央仓库搜索最新版本号-->
+            <version>2.0.2</version>
+        </dependency>
 
+        <!--集成solr搜索引擎客户端-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-solr</artifactId>
+        </dependency>
 
     </dependencies>
 
     <build>
         <plugins>
-           <!-- <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>-->
+            <!-- <plugin>
+                 <groupId>org.springframework.boot</groupId>
+                 <artifactId>spring-boot-maven-plugin</artifactId>
+             </plugin>-->
             <!--参数解释：
             imageName:镜像的名称，可以通过${project.groupId}/${project.artifactId}:${project.version} 动态制定镜像名称
             当然也可以在前面加上镜像地址，比如127.0.0.1:5000,以声明将构建好的镜像存储在本地

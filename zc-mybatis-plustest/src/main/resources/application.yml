@@ -11,7 +11,6 @@ spring:
     publisher-confirms: true
     #确认消息已发送到队列(Queue)
     publisher-returns: true
-
   datasource:
     username: root
     password: 123456
@@ -35,6 +34,9 @@ spring:
       druid:
         stat:
           slowSqlMillis: 5000
+  data:
+    solr:
+      host: http://129.28.158.68:8983/solr
 
 docker:
   image:
