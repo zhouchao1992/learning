@@ -20,6 +20,8 @@
     </properties>
     <modules>
         <module>zc-common</module>
+        <module>zc-mybatis-plustest</module>
+        <module>zc-springboot-adminserver</module>
     </modules>
     <dependencies>
         <dependency>

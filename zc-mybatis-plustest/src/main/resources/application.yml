@@ -2,19 +2,19 @@ server:
   port: 8089
 
 spring:
-  rabbitmq:
-    host: 129.28.158.68
-    port: 5672
-    username: zhouchao
-    password: 123456
+  #rabbitmq:
+    #host: 129.28.158.68
+    #port: 5672
+    #username: zhouchao
+    #password: 123456
     #消息发送确认回调
-    publisher-confirms: true
+    #publisher-confirms: true
     #确认消息已发送到队列(Queue)
-    publisher-returns: true
+    #publisher-returns: true
   datasource:
     username: root
-    password: 123456
-    url: jdbc:mysql://129.28.158.68:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    password: root
+    url: jdbc:mysql://129.28.158.68:3306/mall?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 20
@@ -34,9 +34,9 @@ spring:
       druid:
         stat:
           slowSqlMillis: 5000
-  data:
-    solr:
-      host: http://129.28.158.68:8983/solr
+  #data:
+    #solr:
+      #host: http://129.28.158.68:8983/solr
 
 docker:
   image:

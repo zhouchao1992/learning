@@ -1,3 +1,4 @@
+/*
 package com.zc.mybatisplustest.controller;
 
 import com.zc.mybatisplustest.rabbitconfig.direct.provider.Constants;
@@ -15,9 +16,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+*/
 /**
  * rabbitmq  消息注册  推送   直连型交换机实现方法
- */
+ *//*
+
 @RestController
 @RequestMapping("/send/")
 @Api(tags = "rabbitmq消息推送测试")
@@ -40,3 +43,4 @@ public class RabbitMQMsgDirectSendController {
         return "ok";
     }
 }
+*/

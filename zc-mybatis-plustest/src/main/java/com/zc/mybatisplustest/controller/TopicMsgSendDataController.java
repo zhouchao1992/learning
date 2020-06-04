@@ -1,3 +1,4 @@
+/*
 package com.zc.mybatisplustest.controller;
 
 import com.zc.mybatisplustest.rabbitconfig.topic.provider.Constants;
@@ -51,3 +52,4 @@ public class TopicMsgSendDataController {
         return "ok";
     }
 }
+*/

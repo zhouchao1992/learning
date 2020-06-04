@@ -1,3 +1,4 @@
+/*
 package com.zc.mybatisplustest.rabbitconfig;
 
 import org.springframework.amqp.core.Message;
@@ -39,3 +40,4 @@ public class CallbackRabbitMqConfig {
         return rabbitTemplate;
     }
 }
+*/

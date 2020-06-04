@@ -1,0 +1,23 @@
+1.在安装nginx前首先要确认系统中安装了gcc、pcre-devel、zlib-devel、openssl-devel。
+    安装执行命令：yum -y install gcc pcre-devel zlib-devel openssl openssl-devel
+
+2.nginx下载地址：https://nginx.org/download/  加压：tar -zxvf nginx-1.9.9.tar.gz
+
+3.进入解压目录：cd nginx-1.9.9
+
+4.配置       执行：   ./configure --prefix=/usr/local/nginx     命令
+
+5.编译 执行命令：make
+
+6.初始化 执行命令：make install
+
+7.进入第4步骤中的安装目录：/usr/local/nginx
+
+8.测试是否安装成功，命令： ./sbin/nginx -t
+
+9.启动nginx   进入安装目录：/usr/local/nginx/sbin   执行：./nginx  命令
+
+10.配置服务器对80端口开启    执行：firewall-cmd --add-port=80/tcp --permanent   （有防火墙的重启防火墙，没有的忽略，执行命令：systemctl restart firewalld）
+
+11.配置nginx开机自启动  vim /etc/rc.d/rc.local   将nginx安装目录添加进去，如：/usr/local/nginx/sbin/nginx
+

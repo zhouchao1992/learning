@@ -1,3 +1,4 @@
+/*
 package com.zc.mybatisplustest.controller;
 
 import io.swagger.annotations.Api;
@@ -33,3 +34,4 @@ public class FanoutSendMsgController {
         return "ok";
     }
 }
+*/
