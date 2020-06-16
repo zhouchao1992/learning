@@ -1,4 +1,3 @@
-/*
 package com.zc.mybatisplustest.rabbitconfig.topic.consumer;
 
 import com.zc.mybatisplustest.rabbitconfig.topic.provider.Constants;
@@ -15,4 +14,3 @@ public class TopicManReceiver<T> {
         System.out.println("接收到man消息！------>消息为："+msg.toString());
     }
 }
-*/

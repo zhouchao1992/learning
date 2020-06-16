@@ -1,4 +1,3 @@
-/*
 package com.zc.mybatisplustest.rabbitconfig.fanout.consumer;
 
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
@@ -14,4 +13,3 @@ public class ConsumerFanoutB<T> {
         System.out.println("FanoutReceiverB消费者收到消息  : " +testMessage.toString());
     }
 }
-*/

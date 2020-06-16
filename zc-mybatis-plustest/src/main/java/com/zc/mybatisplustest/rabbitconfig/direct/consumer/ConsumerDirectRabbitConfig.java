@@ -1,4 +1,3 @@
-/*
 package com.zc.mybatisplustest.rabbitconfig.direct.consumer;
 
 import com.zc.mybatisplustest.rabbitconfig.direct.provider.Constants;
@@ -9,11 +8,10 @@ import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-*/
 /**直连型交换机实现方法
  * 消费者单纯的使用，其实可以不用添加这个配置，直接建后面的监听就好，
  * 使用注解来让监听器监听对应的队列即可。配置上了的话，其实消费者也是生成者的身份，也能推送该消息
- *//*
+ */
 
 @Configuration
 public class ConsumerDirectRabbitConfig {
@@ -35,4 +33,3 @@ public class ConsumerDirectRabbitConfig {
         return BindingBuilder.bind(consumerDirectQueue()).to(consumerDirectExchange()).with(Constants.PROVIDER_QUEUE_ROUTE_KEY);
     }
 }
-*/

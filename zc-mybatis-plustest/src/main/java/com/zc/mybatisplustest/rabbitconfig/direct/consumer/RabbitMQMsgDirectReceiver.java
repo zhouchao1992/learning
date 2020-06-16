@@ -1,4 +1,3 @@
-/*
 package com.zc.mybatisplustest.rabbitconfig.direct.consumer;
 
 import com.zc.mybatisplustest.rabbitconfig.direct.provider.Constants;
@@ -14,10 +13,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-*/
 /**
  * 直连型交换机消息消费
- *//*
+ */
 
 @Component
 @RabbitListener(queues = Constants.SEND_QUEUE_NAME) //监听的队列名称
@@ -40,4 +38,3 @@ public class RabbitMQMsgDirectReceiver<T> {
         rabbitTemplate.convertAndSend(Constants.PROVIDER_EXCHANGE_NAME ,Constants.PROVIDER_QUEUE_ROUTE_KEY, map);
     }
 }
-*/

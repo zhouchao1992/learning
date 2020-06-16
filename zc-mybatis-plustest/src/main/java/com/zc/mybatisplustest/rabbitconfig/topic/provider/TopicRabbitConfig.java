@@ -1,4 +1,3 @@
-/*
 package com.zc.mybatisplustest.rabbitconfig.topic.provider;
 
 import org.springframework.amqp.core.Binding;
@@ -41,4 +40,3 @@ public class TopicRabbitConfig {
         return BindingBuilder.bind(secondQueue()).to(exchange()).with(Constants.TOPIC_SEND_ROUTE);
     }
 }
-*/

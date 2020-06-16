@@ -1,0 +1,10 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: zc-securitys
+  security:
+    user:
+      name: admin
+      password: 123456
+

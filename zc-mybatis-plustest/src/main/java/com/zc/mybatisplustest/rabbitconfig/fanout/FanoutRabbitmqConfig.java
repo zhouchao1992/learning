@@ -1,4 +1,3 @@
-/*
 package com.zc.mybatisplustest.rabbitconfig.fanout;
 
 import org.springframework.amqp.core.Binding;
@@ -10,12 +9,11 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class FanoutRabbitmqConfig {
-    */
 /**
      *  创建三个队列 ：fanout.A   fanout.B  fanout.C
      *  将三个队列都绑定在交换机 fanoutExchange 上
      *  因为是扇型交换机, 路由键无需配置,配置也不起作用
-     *//*
+     */
 
 
 
@@ -54,4 +52,3 @@ public class FanoutRabbitmqConfig {
         return BindingBuilder.bind(queueC()).to(fanoutExchange());
     }
 }
-*/

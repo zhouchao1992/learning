@@ -1,4 +1,3 @@
-/*
 package com.zc.mybatisplustest.rabbitconfig.direct.provider;
 
 import org.springframework.amqp.core.Binding;
@@ -8,10 +7,10 @@ import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-*/
 /**
  * 直连型交换机配置
- *//*
+ * */
+
 
 @Configuration
 public class ProviderDirectRabbitConfig {
@@ -46,4 +45,3 @@ public class ProviderDirectRabbitConfig {
         return new DirectExchange("lonelyDirectExchange");
     }
 }
-*/
